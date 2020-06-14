@@ -1,0 +1,52 @@
+%center {
+  display: flex;
+  align-items: center;
+}
+
+.top-level-container {
+  @extend %center;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+  background: rgba(190, 50, 90, 0.4);
+}
+
+.code {
+  font-family: Consolas, monaco, monospace;
+}
+
+.note-form {
+  margin-bottom: 1rem;
+}
+
+.pa2F4 {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.note {
+  @extend %center;
+  list-style-type: none;
+  p {
+    margin: 0;
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
+
+  button {
+    background: transparent;
+    font-size: 1.25rem;
+    border-style: none;
+    border-width: 0;
+
+    span {
+      cursor: pointer;
+      color: transparentize($color: #ff0000, $amount: 0.5);
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #ff0000;
+      }
+    }
+  }
+}
