@@ -38,6 +38,12 @@
     font-size: 1.25rem;
     border-style: none;
     border-width: 0;
+    transition: 0.3s ease;
+    transform: scale(1);
+    outline: none;
+    &:active {
+      transform: scale(0.8);
+    }
 
     span {
       cursor: pointer;
